@@ -17,13 +17,25 @@ $opel = array(
     "doors" => 5,
     "year" => "2016"
 );
-
 $array = array(
     "bmw" => $bmw,
     "toyota" => $toyota,
     "opel" => $opel
 );
 
-echo 'CAR BMW <br>' . $array[bmw][model] . ' ' . $array[bmw][speed] . ' ' . $array[bmw][doors] . ' ' . $array[bmw][year];
-echo '<br>CAR TOYOTA <br>' . $array[toyota][model] . ' ' . $array[toyota][speed] . ' ' . $array[toyota][doors] . ' ' . $array[toyota][year];
-echo '<br>CAR OPEL <br>' . $array[opel][model] . ' ' . $array[opel][speed] . ' ' . $array[opel][doors] . ' ' . $array[opel][year];
+echo "CAR BMW <br>";
+
+foreach ($bmw as $val){
+    echo $val . ' ';
+}
+
+echo "<br> <br> CAR TOYOTA <br>";
+
+foreach ($toyota as $val){
+    echo $val . ' ';
+}
+
+echo "<br> <br> CAR OPEL <br>";
+foreach ($opel as $val){
+    echo $val . ' ';
+}
